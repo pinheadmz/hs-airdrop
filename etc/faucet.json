@@ -1,12 +1,12 @@
 {
-  "checksum": "5b36a26070fd664308d3d30023151cba2960bd8d1ad079b6cde517f5b869f680",
-  "root": "f0f9226709f45c64aa428fcea560a4549d7764dee736a5eaea18de3b113345e8",
-  "leaves": 1405,
-  "depth": 11,
-  "participants": 1210,
-  "faucet": 7063248364928,
-  "shares": 1616,
-  "sponsors": 68,
-  "creators": 127,
-  "external": 214200000000000
+  "checksum": "183efe4621792cf2d803440697b9a4338a2ea21576c6a61ebdab15a0174ac305",
+  "root": "ae01f209081430151cd0c417e1aac0dc9aa731c79e851333b69daddb1eb6db4a",
+  "leaves": 1,
+  "depth": 0,
+  "participants": 1,
+  "faucet": 1234567890,
+  "shares": 1,
+  "sponsors": 0,
+  "creators": 0,
+  "external": 0
 }

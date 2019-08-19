@@ -34,8 +34,7 @@ const {
  * Constants
  */
 
-const BUILD_DIR = process.env.BUILD_DIR
-               || Path.resolve(os.homedir(), '.hs-tree-data');
+const BUILD_DIR = Path.resolve(__dirname, '..', 'build');
 const NONCE_DIR = Path.resolve(BUILD_DIR, 'nonces');
 const GITHUB_URL = 'https://github.com/handshake-org/hs-tree-data/raw/master';
 
@@ -54,7 +53,7 @@ const {
 
 // TODO: Separate into another meta json file.
 const PROOF_CHECKSUM =
-  'ad4ee07f46d43b892350e700cdec62f6f398e90fa9b2bdd039627c18dd456792';
+  'f749ac6024d499bd3a481e4d5f79cb3ea20961481a2c9dfc2633b80158a8c57a';
 
 // Test address.
 const ADDR = 'ts1q5z7yym8xrh4quqg3kw498ngy7hnd4sruqyxnxd';

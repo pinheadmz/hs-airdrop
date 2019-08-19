@@ -1,3 +1,13 @@
+# Airdrop - regtest guide
+
+This is a demonstration of how the Handshake airdrop tree was built. To complete
+the demonstration, find the `"root": "..."` values in both `/etc/tree.json` and
+`/etc/faucet.json` and insert those values in the hsd repository in 
+`/primitives/airdropproof.js` as `AIRDROP_ROOT` and `FAUCET_ROOT` respectively.
+
+Then complete the normal airdrop procedure below to generate a raw base64 proof
+and submit it to your regtest chain!
+
 # Airdrop
 
 Redemption tool for the Handshake network's decentralized airdrop to open
