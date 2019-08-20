@@ -10,9 +10,8 @@ const blake2b = require('bcrypto/lib/blake2b');
 const sha256 = require('bcrypto/lib/sha256');
 const merkle = require('bcrypto/lib/mrkl');
 const AirdropKey = require('../lib/key');
-// const tree = require('../etc/tree.json');
-// const {reward: TREE_REWARD} = tree;
-const TREE_REWARD = 1234567890;
+const tree = require('../etc/tree.json');
+const {reward: TREE_REWARD} = tree;
 
 /*
  * Constants
@@ -21,9 +20,9 @@ const TREE_REWARD = 1234567890;
 assert(process.argv.length > 2);
 
 const PREFIX = process.argv[2];
-const FAUCET_FILE = Path.resolve(__dirname, '..', 'build', 'faucet.bin');
+const FAUCET_FILE = Path.resolve(__dirname, '..', 'build-faucet', 'faucet.bin');
 const FAUCET_JSON = Path.resolve(__dirname, '..', 'etc', 'faucet.json');
-const PROOF_FILE = Path.resolve(__dirname, '..', 'build', 'proof.json');
+const PROOF_FILE = Path.resolve(__dirname, '..', 'build-faucet', 'proof.json');
 
 /*
  * Main

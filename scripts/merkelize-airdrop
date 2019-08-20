@@ -24,10 +24,10 @@ const {SSHPublicKey} = ssh;
 assert(process.argv.length > 2);
 
 const PREFIX = Path.resolve(process.argv[2]);
-const BUILD_DIR = Path.resolve(__dirname, '..', 'build');
-const TREE_FILE = Path.resolve(__dirname, '..', 'build', 'tree.bin');
+const BUILD_DIR = Path.resolve(__dirname, '..', 'build-airdrop');
+const TREE_FILE = Path.resolve(__dirname, '..', 'build-airdrop', 'tree.bin');
 const TREE_JSON = Path.resolve(__dirname, '..', 'etc', 'tree.json');
-const NONCE_DIR = Path.resolve(__dirname, '..', 'build', 'nonces');
+const NONCE_DIR = Path.resolve(__dirname, '..', 'build-airdrop', 'nonces');
 const MAX_AIRDROP = 0.952e9 * 1e6;
 
 /*
