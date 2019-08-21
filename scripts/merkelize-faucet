@@ -20,9 +20,9 @@ const {reward: TREE_REWARD} = tree;
 assert(process.argv.length > 2);
 
 const PREFIX = process.argv[2];
-const FAUCET_FILE = Path.resolve(__dirname, '..', 'build-faucet', 'faucet.bin');
+const FAUCET_FILE = Path.resolve(__dirname, '..', 'build', 'faucet.bin');
 const FAUCET_JSON = Path.resolve(__dirname, '..', 'etc', 'faucet.json');
-const PROOF_FILE = Path.resolve(__dirname, '..', 'build-faucet', 'proof.json');
+const PROOF_FILE = Path.resolve(__dirname, '..', 'build', 'proof.json');
 
 /*
  * Main
