@@ -1,0 +1,64 @@
+; File written on Mon Aug 26 13:16:19 2019
+; dnssec_signzone version 9.14.4
+com.			172800	IN SOA	com. admin.email.com. (
+					2007120710 ; serial
+					86400      ; refresh (1 day)
+					7200       ; retry (2 hours)
+					2419200    ; expire (4 weeks)
+					3600       ; minimum (1 hour)
+					)
+			172800	RRSIG	SOA 8 1 172800 (
+					20190925191619 20190826191619 50856 com.
+					2F0bK7nQWTAydq+r9o5JgE5DKdSikRfh71x/
+					COBPHSNL2JmHYP8hZS+unSoyQwzodBP5tqc4
+					a7fJ3+ns7nEMxrNe028U3lb5t1VOqGyjaKOr
+					RYb6dntzIZ2PsRJH4jb0N5MkkFoV5OZtihVS
+					jMkDX0LcMgvE4EGPUKbLmzWJLrM= )
+			3600	NSEC	bitcoin.com. SOA RRSIG NSEC DNSKEY
+			3600	RRSIG	NSEC 8 1 3600 (
+					20190925191619 20190826191619 50856 com.
+					8IHFqmkOrVquwMhBu5aLQ/MkLw3iK8kGabbE
+					8X14csMfDHKHoN1At+xuXiEtOO5RuAvMIBzA
+					IxgPCK4YuFwmfkyHbn+EfyorGaxCZvVSXkwG
+					OUKve4/91KxX5mRf0i6ObgaEK7WKBwoSJ50x
+					BErOPc4aVeKIicNg8O+RCGRKuG8= )
+			172800	DNSKEY	256 3 8 (
+					AwEAAfr2tjmEnQX4QKWwHAIhsWFEt9IByqYn
+					dZzztsFrCFEr8h29OyqYCQJDaOfOL9ZTbOVL
+					tPkkeDwY+laLRmXQQNQjw3jba7fmiq9m4LHq
+					7k/3dZ8T+QjrDbdGWLg6kQtANYriHFuxraY4
+					kEPNDx8xZHzuqRudP00f0Iqb82N09afj
+					) ; ZSK; alg = RSASHA256 ; key id = 50856
+			172800	DNSKEY	257 3 8 (
+					AwEAAQ3nYMx/dBRwVCz2KgpTXccqiq56tIAF
+					vaOBAaj9dRcClCrO6IB+YcyWfpxBcdKDEIyy
+					yndUwbVL1hq+S+vrzlRaV9KCtu6sZW8lOuRg
+					xt7XEiRlB6nc5t2vvnYA1d6su3MstiqGG4Yy
+					/mtH8In7rr9s1ZxunipIuFp14TONulrU3w==
+					) ; KSK; alg = RSASHA256 ; key id = 63499
+			172800	RRSIG	DNSKEY 8 1 172800 (
+					20190925191619 20190826191619 63499 com.
+					ARkadzH4KyjjtFsmRPoXvn09H+NGRasfFsDQ
+					2acAwF+j3YR5mtLTUo3pSGQOjmEXXzq/luXX
+					7yPWa7Md3d/pQIUzK5g1NGK6XId0Ou/zHTI8
+					6TPRmhM3rNoasYv9xGKb8wEu/aS5Apy9ebu+
+					it6J+SevLQKgPHrStAhxvg5M24Ze )
+bitcoin.com.		172800	IN NS	ns1.nameserver.com.com.
+			172800	DS	5329 8 2 (
+					1DE0CCDCE35C9EB108FCC06C035B28D31865
+					C317C7FC8F0813E4C3053D94DA1D )
+			172800	RRSIG	DS 8 2 172800 (
+					20190925191619 20190826191619 50856 com.
+					HsmK61Gagz+kzzWhcvLI7kcLbgyZxNL10sN3
+					iZY5OFGJMyf6+9c+eDBEjfgp5/VnuxwQUmDg
+					uSgh/1r4iMCsJD4LsA+pb5wKGyyL4YGM7qWE
+					kOphLNNDmNhh6y1RabS5xRZenvjs4V+g5Weh
+					F2CllLFwik3MQQeGezbRzrT4khg= )
+			3600	NSEC	com. NS DS RRSIG NSEC
+			3600	RRSIG	NSEC 8 2 3600 (
+					20190925191619 20190826191619 50856 com.
+					trNmoGCJp5gGs6BOi+HPMOMlb7dKV9XNH7Zm
+					ME96Kp7NoBn7F0m3iaklTcXXeB6rWJlRUhCk
+					mnYmLl7nUYvE9yfBP10FgXsjXVFDKXupQRW6
+					E0CTSdApwVzkYpMS/mir4wzytv+RowwiNFF3
+					7WNYyd8k3BW0L79IF4FDZHNthmI= )

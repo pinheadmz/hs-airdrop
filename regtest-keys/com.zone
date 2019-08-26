@@ -1,0 +1,11 @@
+$ORIGIN com.
+$TTL 172800
+@ IN SOA com. admin.email ( 2007120710 1d 2h 4w 1h )
+
+
+$INCLUDE /Users/matthewzipkin/Desktop/work/hs-airdrop/regtest-keys/Kcom.+008+50856.key
+$INCLUDE /Users/matthewzipkin/Desktop/work/hs-airdrop/regtest-keys/Kcom.+008+63499.key
+
+bitcoin.com. IN NS ns1.nameserver.com
+bitcoin.com. IN DS 5329 8 2 1DE0CCDCE35C9EB108FCC06C035B28D31865C317C7FC8F0813E4C3053D94DA1D
+

@@ -1,0 +1,10 @@
+$ORIGIN .
+$TTL 172800
+@ IN SOA . admin.email ( 2007120710 1d 2h 4w 1h )
+
+
+$INCLUDE /Users/matthewzipkin/Desktop/work/hs-airdrop/regtest-keys/K.+008+29556.key
+$INCLUDE /Users/matthewzipkin/Desktop/work/hs-airdrop/regtest-keys/K.+008+30679.key
+
+com. IN DS 63499 8 2 8BF2E0181D61980C1C054AC200550C1C645E8EE94B6B62FA9217287DC40D49B9
+com. IN NS ns1.nameserver.com

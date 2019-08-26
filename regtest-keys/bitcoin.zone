@@ -1,0 +1,9 @@
+$ORIGIN bitcoin.com.
+$TTL 172800
+@ IN SOA com. admin.email ( 2007120710 1d 2h 4w 1h )
+
+
+$INCLUDE /Users/matthewzipkin/Desktop/work/hs-airdrop/regtest-keys/Kbitcoin.com.+008+05329.key
+$INCLUDE /Users/matthewzipkin/Desktop/work/hs-airdrop/regtest-keys/Kbitcoin.com.+008+17421.key
+
+bitcoin.com. IN TXT "hns-regtest:aakolmkpax6dszyullk3wzwrujz2k7etdmap2adeaai4rxpbtwp3dxcs4grnhmr6pklw7y5fccpxk5xpqscemgguaadqcaaaacpyp3yf"

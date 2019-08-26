@@ -1,0 +1,74 @@
+; File written on Mon Aug 26 12:31:19 2019
+; dnssec_signzone version 9.14.4
+.			172800	IN SOA	. admin.email. (
+					2007120710 ; serial
+					86400      ; refresh (1 day)
+					7200       ; retry (2 hours)
+					2419200    ; expire (4 weeks)
+					3600       ; minimum (1 hour)
+					)
+			172800	RRSIG	SOA 8 0 172800 (
+					20190925183119 20190826183119 29556 .
+					QLXKgrjQdiXdlgr1kMT6zY9Gdny8fi5gUpYW
+					3O/1QnO2oqJA8qmD5OdiyRbYIIVGuxbWGzUy
+					/vfZQV+wBaQowLJBrsNMUYftoPTQK7gBv9sW
+					r6leQ14f1gh14nQiUYV24KkTc7X2r2VBn0Th
+					EZWg7eUv61AEA888o12FuhNL8Ko= )
+			3600	NSEC	com. SOA RRSIG NSEC DNSKEY
+			3600	RRSIG	NSEC 8 0 3600 (
+					20190925183119 20190826183119 29556 .
+					FkgKrtU3gugWHg/0WDYilKWaWHKhgUPF4gM7
+					Inno0V8yj/NL3kWAUAb8p6hEpwV4KsYnD4Ku
+					buw/Jpjz8ws+4yrHbvmKKVy342oVQOpwubPx
+					tvnE8CWoem4vKsFabIJHbIkeV7YBmzlPfMdn
+					bj9WJ7FTO7vrwBXCWA9pfH7hoTM= )
+			172800	DNSKEY	256 3 8 (
+					AwEAAZ7fWeMd79A755AWNB8de0U4twHPSfvz
+					GTUTvmOT8EDh8lo0BGMHUaAIH0vr0eQF/7mm
+					gMevlrQ48X2o6a6OQ1InosZyh3LlPRhQXs2m
+					LOKlFob01fgwnn/8VqHlD6ewyfEEwhedP9tl
+					I4un9MWAJEqVI6ge8NFc+D6K1yjfl78h
+					) ; ZSK; alg = RSASHA256 ; key id = 29556
+			172800	DNSKEY	257 3 8 (
+					AwEAAc3p1FqpcX4bVsrUoWu4Yoeq1YwRXLFH
+					uM0AbXq2t7OxIY5sWQACOYEo6mJ5bHPT5PXF
+					G4tG2Y+oti/jLqBE3yciyGfZVQZVuZZvxKQ5
+					/IsX0mi1U2R5jVXNsX8XluKkXnshYzz6raQC
+					YtdcdADNPwbe10AK7l1izE1HaJgnUOjAiOXa
+					YG3+h0LiBt6zP2srxElsgM1eme3lh9V3gYQX
+					zBSsbKwt3dp53o22QEHxFF08mLrqHyIdsDxH
+					W6VeSKhyE9XwXIYEdoITucP39ciH/bLbltsF
+					cVTiNO8aopIyElgkyRbJVBv52AWP4naWXwbA
+					YDPeN0oURMJp39jgNtTSAhM=
+					) ; KSK; alg = RSASHA256 ; key id = 30679
+			172800	RRSIG	DNSKEY 8 0 172800 (
+					20190925183119 20190826183119 30679 .
+					ZUiZ1BH+aBvo6050/KqLncK/ByRACd9jaBR1
+					9JkserB6CRdh+fSm09L86EIyglCmrSQbEVjs
+					DqbEEvgX97X3PoM1TFkANT/nOkXN7JabZqkT
+					YUHheJQbs4ltYtZyugN/PUYSMqVZhLP6mGup
+					IkJwgyHTLOSOVOY2JLgb21RHiBlkPNi2Slh0
+					XO48lhbpxS5FGE3h8Sf/jyWzn2XkHIw59Sqo
+					MF0HOR1oseeoElBr8Ip4GJVN7NkfZgYShLDt
+					ywpmS8ouhVJXT3j12hJTah2P7dMDSPj6UQUt
+					U4SbHKZEe1ZbouPmwc5FkoFFV2nMmD2E/BYS
+					scw95V2DzooFrzu8qg== )
+com.			172800	IN NS	ns1.nameserver.com.
+			172800	DS	63499 8 2 (
+					8BF2E0181D61980C1C054AC200550C1C645E
+					8EE94B6B62FA9217287DC40D49B9 )
+			172800	RRSIG	DS 8 1 172800 (
+					20190925183119 20190826183119 29556 .
+					kd6JryfdYJ+aJpHK0bsXQ7JR5AQi2rBoDtwh
+					NRYozJVGX/7+K//TqRzIggRD2Gbr7QsI9fcO
+					EUzmHZrWwtUdkb+65e/eBT3zQuz3qQd1J/+u
+					BxObb+KVlUz+w66+0zEbb1HF+NVKMenbzI2z
+					DyO/EjIBS3rctjnWwJfiVOEGNQY= )
+			3600	NSEC	. NS DS RRSIG NSEC
+			3600	RRSIG	NSEC 8 1 3600 (
+					20190925183119 20190826183119 29556 .
+					Lueb7bw8m1U2XJi53vyBP4y2QdPzxNXcz93J
+					YBNdpGXGr5oLG+m8+roqle2dbTVWun3FycLL
+					U6KzQiQXc+ZK0cbOi2CsO2jg09nADRs1QzCO
+					pSBBfilzebZFZOzmjhtYJcD/cvnZK6Fj7Ak4
+					+g1G0COZ9Vnkzhzhf5ZZ7jf/pgY= )
