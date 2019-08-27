@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const assert = require('bsert');
+const fs = require('bfile');
+const Path = require('path');
+const pgp = require('bcrypto/lib/pgp');
+const {PGPMessage} = pgp;
+
+assert(process.argv.length > 2);
+
+const file = Path.resolve(process.argv[2]);
+const str = fs.readFileSync(file, 'utf8');
+
+const msg = PGPMessage.fromString(str);
+assert(msg.packets.length > 0);
+const pkt = msg.packets[0];
+const pubkey = pkt.body;
+
+const hexID = pubkey.id().toString('hex');
+const base64pubkey = pubkey.toBase64();
+
+console.log('\n');
+console.log('Key ID:');
+console.log(hexID);
+console.log('\n');
+console.log('Public key (base64):');
+console.log(base64pubkey);
+console.log('\n');
